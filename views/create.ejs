@@ -1,0 +1,50 @@
+<%- include("partials/header.ejs") %>
+
+    <% if(locals.postId){ %>
+
+        <form action="/update" method="post">
+
+            <br><br>
+    
+            <h2>Update blog</h2>
+    
+            <div class="formCreate">
+
+                <label for="title">Title of the blog: </label>
+                <input type="text" id="" name="title" placeholder="Title" value="<%= title %>" required>
+                <br>
+
+                <label for="blogText">Enter content: </label>
+                <textarea name="content" id="blogTextUp" cols="80" rows="15" required><%= content %></textarea>
+                <br>
+                <input hidden type="text" name="index" value="<%= postId %>">
+    
+                <input type="submit" value="Update" class="btn btn-outline-light btn-lg create-button-submit">
+            </div>
+    
+        </form>
+    <% } else { %>
+        <form action="/upload" method="post">
+
+            <br><br>
+    
+            <h2>Create new blog</h2>
+    
+            <div class="formCreate">
+    
+                <label for="title">Title of the blog: </label>
+                <input type="text" id="title" name="title" required>
+                <br>
+    
+                <label for="blogText">Enter content: </label>
+                <br>
+                <textarea name="blogText" id="blogText" cols="80" rows="15" required></textarea>
+                <br>
+    
+                <input type="submit" value="Upload" class="btn btn-outline-light btn-lg create-button-submit">
+            </div>
+    
+        </form>
+    <% } %>
+
+<%- include("partials/footer.ejs") %>

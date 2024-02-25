@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+
+
+<div class="container view-container">
+    <div class="row">
+        <div class="col-6">
+            <h2><%= title %></h2>
+            <p><%= date %></p>
+            <p><%= content %></p>
+        </div>
+    
+        <div class="col-6 button-view-div">
+            <a href="/edit/<%= postId %>"><button type="button" class="btn btn-outline-light btn-lg create-button view-button">Update</button></a>
+            <form action="/delete" method="post">
+                <input hidden type="text" name="index" value="<%= postId %>">
+                <input class="btn btn-outline-light btn-lg create-button view-button" type="submit" name="delete" value="Delete">
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

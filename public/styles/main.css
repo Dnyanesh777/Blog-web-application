@@ -1,0 +1,171 @@
+body{
+    background-color: #fff;
+    padding: 5px;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-container{
+    padding: 0;
+}
+
+
+.div-container{
+    background-color: #7F27FF;
+    padding: 2px 40px;
+}
+
+.a-header{
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 2px;
+    
+}
+
+.a-header-item{
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    font-size: 1.25rem;
+    opacity: 0.75;
+}
+
+.a-header-item:hover{
+    color: #fff;
+    opacity: 1;
+}
+
+h1{
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3.25rem;
+    text-align: center;
+    margin: 20% auto 0;
+    color: #1B262C;
+}
+
+h5{
+    text-align: center;
+    color: #f3b600;
+    margin: 3% auto 7%;
+}
+
+.index-div-1{
+    text-align: right;
+    padding-left: 5%;
+}
+
+.create-button{
+    color: #7F27FF;
+    border-color: #7F27FF;
+    margin-right: 32%;
+}
+
+.create-button:hover{
+    background-color: #7F27FF;
+    color: #fff;
+    border: #7F27FF;
+}
+
+.blog-img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+
+.home-page-img{
+    width: 464px;
+    height: 600px;
+    margin-top: 3%;
+
+}
+
+.formCreate{
+    text-align: left;
+    margin: 3% 22% 0 22%;
+}
+
+label{
+    margin: 20px;
+}
+
+textarea{
+    margin-left: 20px;
+}
+
+.create-button-submit{
+    color: #7F27FF;
+    border-color: #7F27FF;
+    margin: 5% 40%;
+}
+
+.create-button-submit:hover{
+    background-color: #7F27FF;
+    color: #fff;
+    border: #7F27FF;
+}
+
+.div-body{
+    background-color: #F1EAFF;
+    color: #000;
+    padding: 50px;
+    margin: 3% 17% 3% 20%;
+    border-radius: 20px;
+}
+
+.div-body:hover{
+    background-color: #E5D4FF;
+}
+
+.a-body{
+    color: #000;
+    font-size: 4rem;
+}
+
+.margin-blog{
+    margin: 20px auto;
+}
+
+.body-blog{
+    text-align: left;
+}
+
+hr{
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: #7F27FF;
+    color: white;
+    padding: 40px;
+}
+
+.footer-first{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.footer-second{
+    text-align: left;
+    padding-left: 0;
+}
+
+.view-container{
+    text-align: left;
+    padding: 80px 30px;
+}
+
+.button-view-div{
+    text-align: center;
+    padding-top: 10%;
+}
+
+.view-button{
+    margin: 10px;
+}

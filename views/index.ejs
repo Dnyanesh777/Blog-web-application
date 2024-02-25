@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") %>
+
+<div class="row">
+    <div class="col-lg-6 index-div-1">
+        <h1>Publish your passions, your way</h1>
+        <h5>Create a unique and beautiful blog easily.</h5>    
+        <a href="/create"><button type="button" class="btn btn-outline-light btn-lg create-button"><img class="blog-img" src="image/blog-solid-golden.svg" alt="blog logo">Create your blog</button></a>
+    </div>
+    <div class="col-lg-6">
+        <img src="/image/home-page.jpg" alt="home-img" class="home-page-img">
+    </div>
+</div>    
+
+<div class="div-body">
+    <% if(locals.posts.length){ %>
+        <% posts.forEach((post) => { %>
+            <div class="body-blog">
+                <a class="a-body margin-blog" href="/view/<%= posts.indexOf(post) %>"><h2><%= post.pTitle %></h2></a>
+                <h6 class="margin-blog"><%= post.dateCurr %></h6>
+                <p class="margin-blog"><%= post.pContent %></p>
+                <hr>
+            </div>
+          <% }) %>
+    <% } else { %>
+        <h2>Empty</h2>
+        <h5>Create new post</h5>
+    <% } %>
+</div>
+
+
+<%- include("partials/footer.ejs") %>
